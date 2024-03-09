@@ -1,7 +1,7 @@
 # Capitulo 1, aula 1:
 
 **Perguntas:**
-**R1** - <span style="color: blue;"> Qual é a diferença entre um hospedeiro e um sistema final? Cite os tipos de sistemas finais. Um servidor Web é um sistema final? </span> 
+**R1** - Qual é a diferença entre um hospedeiro e um sistema final? Cite os tipos de sistemas finais. Um servidor Web é um sistema final?
 
 R: Um hospedeiro é um dispositivo físico ou virtual que executa aplicativos ou processos. Ex: computador. Um sistema final são dispositivos conectados a internet. Ex: smarphones, computadores pessoais, etc. Um servidor pode sim ser considerado um sistema final, deis que esteja conectado a internet e usado pelo usuário para realizar tarefas específicas.
 
@@ -14,6 +14,14 @@ R:  *Cabo Coaxial:* É constituido de dois condutores de cobre, como o par tran�
 *Canais de rádio terrestre:* Sua instalação pode atravessar paredes e não requer cabos físicos. Categoria: Acesso Residencial
 
 *Canais de rádio por satélite:* Dois tipos de satélites são usados para comunicações: Satélites geoestacionários e de órbita baixa. Categoria: Acesso residencial ou móvel.
+
+*Wi-Fi (Wireless Fidelity):* Permite a conexão sem fio a redes locais. Categoria: Acesso Residencial, Acesso Corporativo e Acesso Móvel
+
+*DSL (Digital Subscriber Line):* Oferece conectividade de banda larga usando linhas telefônicas existentes. Categoria: Acesso Residencial e Acesso Corporativo
+
+*R7* - Qual a taxa de transmimssão de LAN's Ethernet? 
+
+
 
 
 
