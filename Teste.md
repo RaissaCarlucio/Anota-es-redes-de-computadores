@@ -19,7 +19,14 @@ R:  *Cabo Coaxial:* É constituido de dois condutores de cobre, como o par tran�
 
 *DSL (Digital Subscriber Line):* Oferece conectividade de banda larga usando linhas telefônicas existentes. Categoria: Acesso Residencial e Acesso Corporativo
 
-*R7* - Qual a taxa de transmimssão de LAN's Ethernet? 
+**R7** - Qual a taxa de transmimssão de LAN's Ethernet? 
+
+R: As redes Ethernet podem operar em diferentes velocidades de transmissão, e a taxa específica de transmissão pode depender da versão e do tipo de tecnologia Ethernet utilizada
+
+**R16**: -  Considere o envio de um pacote de uma máquina de origem a uma de destino por uma rota fixa. Relacione os componentes do atraso que formam o atraso fim a fim. Quais deles são constantes e quais são variáveis?
+
+R: Atraso de processamento(constante), atraso de fila(variavel), atraso de transmissão(constante), atraso de propagação(constante).
+
 
 
 
