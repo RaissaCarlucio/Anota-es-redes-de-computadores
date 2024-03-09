@@ -71,12 +71,33 @@ R - A vazão agora é de 100kbits
 
 **P10** - Considere um pacote de comprimento L que se inicia no sistema final A e percorre três enlaces até um sistema final de destino. Eles estão conectados por dois comutadores de pacotes. Suponha que d, s e R, representem o comprimento, a velocidade de propagação e a taxa de transmissão do enlace i, sendo i = 1, 2, 3. O comutador de pacote atrasa cada pacote por droc Considerando que não haja nenhum atraso de fila, em relação a d, s e R, (i= 1, 2, 3) e L, qual é o atraso fim a fim total para o pacote? Suponha agora que o pacote tenha 1.500 bytes, a velocidade de propagação de ambos os enlaces seja 2,5 - 10º m/s, as taxas de transmissão dos três enlaces sejam 2 Mbits/s, o atraso de processamento do comutador de pacotes seja de 3 ms, o comprimento do primeiro enlace seja 5.000 km, o do segundo seja 4.000 km e do último 1.000 km. Dados esses valores, qual é o atraso fim a fim?
 
+**P12** - Um comutador de pacotes recebe um pacote e determina o enlace de saída pelo qual deve ser enviado. Quando o pacote chega, outro já está sendo transmitido nesse enlace de saída e outros quatro já estão esperando para serem transmitidos. Os pacotes são transmitidos em ordem de chegada. Suponha que todos os pacotes tenham 1.500 bytes e que a taxa do enlace seja 2 Mbits/s. Qual é o atraso de fila para o pacote? De modo geral, qual é o atraso de fila quando todos os pacotes possuem comprimento L, a taxa de transmissão é R, x bits do pacote sendo transmitido já foram transmitidos e N pacotes já estão na fila?
 
+R: Taxa de transmissão: 1500*8/2*10^6 = 6*10^-3 segundos (eu acho)
 
+**P18** - Execute o programa Traceroute para verificar a rota entre uma origem e um destino, no mesmo continente, para três horários diferentes do dia.
+a. Determine a média e o desvio-padrão dos atrasos de ida e volta para cada um dos três horários.
+b. Determine o número de roteadores no caminho para cada um dos três. Os caminhos mudaram em algum dos horários?
 
+**P24** Imagine que você queira enviar, com urgência, 40 terabytes de dados de Boston para Los Angeles. Você tem disponível um enlace dedicado de 100 Mbits/s para transferência de dados. Escolheria transmitir os dados por meio desse enlace ou usar um serviço de entrega em 24 horas? Explique.
 
+R: 40*10^12*8/100*10^6  = 3.2*10^6 segundos. Preferiria usar um serviço de entrega 24 horas, pois o tempo para transmitir os dados por meio desse enlance demoraria horas e isso não é o esperado, e sim um serviço que entrega eficiência e velocidade.
 
+**P29** - Suponha que haja um enlace de micro-ondas de 10 Mbits/s entre um satélite geoestacionário e sua estaçãobase na Terra. A cada minuto o satélite tira uma foto digital e a envia à estação-base. Considere uma velocidade de propagação de 2,4.10^8 m/s.
 
+a. Qual é o atraso de propagação do enlace?
 
+R = 10*10^6 bits 
+v = 2,4*10^8m/s
 
+b. Qual é o produto largura de banda-atraso, R.Dprop? 
 
+c. Seja x o tamanho da foto. Qual é o valor mínimo de x para que o enlace de micro-ondas transmita continuamente?
+
+**P31** - Em redes modernas de comutação de pacotes, inclusive a Internet, o hospedeiro de origem segmenta mensagens longas de camada de aplicação (por exemplo, uma imagem ou um arquivo de música) em pacotes menores e os envia pela rede. O destinatário, então, monta novamente os pacotes restaurando a mensagem original. Denominamos esse processo segmentação de mensagem. A Figura 1.27 ilustra o transporte fim a fim de uma mensagem com e sem segmentação. Considere que uma mensagem de 8 x 10º bits de comprimento tenha de ser enviada da origem ao destino na Figura 1.27. Suponha que a velocidade de cada enlace da figura seja 2 Mbits/s. Ignore atrasos de propagação, de fila e de processamento.
+
+a. Considere o envio da mensagem da origem ao destino sem segmentação. Quanto tempo essa mensagem levará para ir do hospedeiro de origem até o primeiro comutador de pacotes? Tendo em mente que cada comutador usa comutação de pacotes do tipo armazena-e-reenvia, qual é o tempo total para levar a mensagem do hospedeiro de origem ao hospedeiro de destino?
+
+b. Agorasuponha que a mensagem seja segmentada em 800 pacotes, cada um com 10.000 bits de comprimento. Quanto tempo demorará para o primeiro pacote ir do hospedeiro de origem até o primeiro comutador?
+
+**P32** - Experimente o applet “Message Segmentation” apresentado no site deste livro. Os atrasos no applet correspondem aos atrasos obtidos no problema anterior? Como os atrasos de propagação no enlace afetam o atraso total fim a fim na comutação de pacotes (com segmentação de mensagem) e na comutação de mensagens?
