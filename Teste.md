@@ -30,12 +30,20 @@ R: Atraso de processamento(constante), atraso de fila(variavel), atraso de trans
 **R18*: - Quanto tempo um pacote de 1.000 bytes leva para se propagar através de um enlace de 2.500 km de distância, com uma velocidade de propagação de 2,5 - 108 m/s e uma taxa de transmissão de 2 Mbits/s? Em geral, quanto tempo um pacote de comprimento L leva para se propagar através de um enlace de distância d, velocidade de propagação s, e taxa de transmissão de R bits/s? Esse atraso depende do comprimento do pacote? Depende da taxa de transmissão?
 
 R: 8000/2*10^6 + 2.500.10^3/108 = 0,023*10^9
+
 Sim, o atraso depende do comprimento do pacote e a taxa de tranmissão.
+
 L/R + D/V 
+
 L = tamanho do pacote em bits
+
 R = taxa de transmissão(vazão escolher a menor)
+
 D = distância
+
 V = velocidade de propagação do sinal
+
+
 
 
 
