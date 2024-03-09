@@ -55,6 +55,22 @@ c. Repita os itens “a” e “b”, mas agora com R, reduzido a 100 kbits/s.
 R - A vazão agora é de 100kbits
 32*10^6/100*10^3 = 320 segundos.
 
+**R21** Visite o applet “Queuing and Loss” no site de apoio do livro. Qual é a taxa de emissão máxima e a taxa de transmissão mínima? Com essas taxas, qual é a intensidade do tráfego? Execute o applet com essas taxas e determine o tempo que leva a ocorrência de uma perda de pacote. Repita o procedimento mais uma vez e determine de novo o tempo de ocorrência para a perda de pacote. Os resultados são diferentes? Por quê? Por que não?
+
+**R25** - Quais são as cinco camadas da pilha de protocolo da Internet? Quais as principais responsabilidades de cada uma dessas camadas?
+
+*Camada de Aplicação:* É onde residem aplicações de rede e seus protocolos, como HTTP(que provê requisição e a transferência de documentos pela web).
+
+*Camada de transporte:* Carrega as mensagens da camada de aplicação entre os lados do cliente e servidor de uma aplicação. Há dois protocolos: TCP e UDP.
+
+*Camada de rede:* É responsável pela movimentação, de um hospedeiro para outro, de pacotes da camada de rede, conhecidos como datagramas.
+
+*Camada de enlance:* Roteia um datagrama por eio de uma série de roteadores entre a origem e o destino.
+
+*Camada fisica:* Movimenta os bits individuais que estão dentro do quadro de um nó para o seguinte.
+
+**P10**Considere um pacote de comprimento L que se inicia no sistema final A e percorre três enlaces até um sistema final de destino. Eles estão conectados por dois comutadores de pacotes. Suponha que d, s e R, representem o comprimento, a velocidade de propagação e a taxa de transmissão do enlace i, sendo i = 1, 2, 3. O comutador de pacote atrasa cada pacote por droc Considerando que não haja nenhum atraso de fila, em relação a d, s e R, (i= 1, 2, 3) e L, qual é o atraso fim a fim total para o pacote? Suponha agora que o pacote tenha 1.500 bytes, a velocidade de propagação de ambos os enlaces seja 2,5 - 10º m/s, as taxas de transmissão dos três enlaces sejam 2 Mbits/s, o atraso de processamento do comutador de pacotes seja de 3 ms, o comprimento do primeiro enlace seja 5.000 km, o do segundo seja 4.000 km e do último 1.000 km. Dados esses valores, qual é o atraso fim a fim?
+
 
 
 
