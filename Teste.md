@@ -43,6 +43,19 @@ D = distância
 
 V = velocidade de propagação do sinal
 
+**R19** - Suponha que o hospedeiro A queira enviar um arquivo grande para o hospedeiro B. O percurso de A para B possui três enlaces, de taxas R, = 500 kbits/s, R, = 2 Mbits/s, e R, = 1 Mbit/s.
+
+a. Considerando que não haja nenhum outro tráfego na rede, qual é a vazão para a transferência de arquivo?
+R-  A- A vazão é de 500 kbit/s
+
+b. Suponha que o arquivo tenha 4 milhões de bytes. Dividindo o tamanho do arquivo pela vazão, quanto tempo levará a transferência para o hospedeiro B?
+R - 32*10^6/500*10^3 = 64 segundos
+
+c. Repita os itens “a” e “b”, mas agora com R, reduzido a 100 kbits/s.
+R - A vazão agora é de 100kbits
+32*10^6/100*10^3 = 320 segundos.
+
+
 
 
 
