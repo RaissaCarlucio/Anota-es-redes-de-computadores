@@ -12,6 +12,12 @@ Aplicação de rede: consiste em pares de processos que nviam mensagens uns para
 
 Para enviar a correspondência postal a um determinado destino, este precisa de um endereço. Para identificar o processo receptor, duas informações devem ser especificadas: 1 - O Endereço do hospedeiro; 2- Um identificador que especifica o processo receptor no hospedeiro de destino. Hospedeiro = endereço IP. O processo de envio tbm precisa identificar o processo receptor( número de porta de destino ).
 
+**Serviços que um protocolo da camada de transporte pode oferecer**:
+
+**Transferência confiável de dados**; **Vazão**: taxa pela qual o processo remetente pode enviar bits ao processo destinatário; **Temporização** (Atraso menor por exemplo para um pensonagem fazer uma ação em um jogo); **Segurança**: dados protegidos.
+
+Protocolo UDP e TCP
+
 
 
 
