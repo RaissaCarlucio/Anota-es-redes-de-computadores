@@ -144,6 +144,44 @@ e. Que tipo de navegador inicia essa mensagem? Por que é necessário o tipo de 
 
 User-Agent: Mozilla/5.0; Compatibilidade:, Recursos específicos do navegador, Debugging e suporte, etc.
 
+**P5** - O texto a seguir mostra a resposta enviada do servidor em reação à mensagem HTTP GET na questão anterior. Responda às seguintes questões, indicando onde está a resposta na mensagem. 
+
+HTTP/1.1 200 OK<cr><lf>Date: Tue, 07 Mar 2008
+
+12:39:45GMT<cr><lf>Server: Apache/2.0.52 (Fedora)
+
+<cr><1f>Last-Modified: Sat, 10 Dec2005 18:27:46
+
+GMT <cr><1f>ETag: “526c3-f22-a88a4c80"<cr><1f>Accept-
+
+Ranges: bytes<cr><1f>Content-Length: 3874<cr><1lf>
+
+Keep-Alive: timeout=max=100<cr><1f>Connection:
+
+Keep-Alive<cr><1f>Content-Type: text/html; charset=
+
+ISO-8859-1l<cr><lf><cr><1f><!doctype html public “-
+
+//w3c//dtd html 4.0 transitional//en"><lf><html><1f>
+
+<head><1f> <meta http-equiv="Content-Type”
+
+content="text/html; charset=iso-8859-1"><lf> <meta
+
+name="GENERATOR” content="Mozilla/4.79 [en] (Windows NT
+
+5.0; U) Netscape]”><1f> <title>CMPSCI 453 / 591 /
+
+NTU-ST550A Spring 2005 homepage</title><1lf></head><1f>
+
+<muito mais texto do documento em seguida (nao mostrado)> a. O servidor foi capaz de encontrar o documento com sucesso ou não? A que horas foi apresentada a
+
+resposta do documento?
+
+b. Quando o documento foi modificado pela ultima vez? c. Quantos bytes existem no documento que esta retornando?
+
+d. Quais são os 5 primeiros bytes do documento que esta retornando? O servidor aceitou uma conexão persistente?
+
 
 
 
