@@ -115,13 +115,21 @@ D - Falso - O cabeçalho Date na mensagem de resposta HTTP indica a data e hora 
 **P4** Considere a seguinte cadeia de caracteres ASCII capturada pelo Wireshark quando o navegador enviou uma mensagem HTTP GFT (ou seja, o conteúdo real de uma mensagem HTTP GET). Os caracteres <cr><lf> são retorno de carro e avanço de linha (ou seja, a cadeia de caracteres em itálico <cr> no texto abaixo representa o caractere único retorno de carro que estava contido, naquele momento, no cabeçalho HTTP). Responda às seguintes questões, indicando onde está a resposta na mensagem HTTP GET a seguir.
 
 GET /cs453/index.html HTTP/1.1<cr><lf>
+
 Host: gai a.cs.umass.edu<cr><lf>
+
 User-Agent: Mozilla/5.0 ( Windows;U; Windows NT 5.1; en-US; rv:1.7.2) Gec ko/20040804 Netscape/7.2 (ax) <cr><lf>
+
 Accept:ext/xml, application/xml, application/xhtml+xml, text /html;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5 <cr><1f>
+
 Accept-Language: en-us,en;q=0.5<cr><1f>
+
 Accept-— Encoding: zip,deflate<cr><lf>
+
 Accept-Charset: ISO -8859-1,utf-8;q=0.7,*;q=0.7<cr><lf>
+
 Keep-Alive: 300<cr> <1f>
+
 Connection: keep-alive<cr><1lf><cr><lf>
 
 a. Qual é a URL do documento requisitado pelo navegador?
@@ -144,43 +152,50 @@ e. Que tipo de navegador inicia essa mensagem? Por que é necessário o tipo de 
 
 User-Agent: Mozilla/5.0; Compatibilidade:, Recursos específicos do navegador, Debugging e suporte, etc.
 
+
+
 **P5** - O texto a seguir mostra a resposta enviada do servidor em reação à mensagem HTTP GET na questão anterior. Responda às seguintes questões, indicando onde está a resposta na mensagem. 
 
-HTTP/1.1 200 OK<cr><lf>Date: Tue, 07 Mar 2008
+HTTP/1.1 200 OK<cr><lf>Date: Tue, 07 Mar 2008 12:39:45GMT<cr><lf>
 
-12:39:45GMT<cr><lf>Server: Apache/2.0.52 (Fedora)
+Server: Apache/2.0.52 (Fedora)<cr><1f>
 
-<cr><1f>Last-Modified: Sat, 10 Dec2005 18:27:46
+Last-Modified: Sat, 10 Dec2005 18:27:46GMT <cr><1f>
 
-GMT <cr><1f>ETag: “526c3-f22-a88a4c80"<cr><1f>Accept-
+ETag: “526c3-f22-a88a4c80"<cr><1f>
 
-Ranges: bytes<cr><1f>Content-Length: 3874<cr><1lf>
+Accept-Ranges: bytes<cr><1f>
 
-Keep-Alive: timeout=max=100<cr><1f>Connection:
+Content-Length: 3874
 
-Keep-Alive<cr><1f>Content-Type: text/html; charset=
+<cr><1lf>Keep-Alive: timeout=max=100<cr><1f>
 
-ISO-8859-1l<cr><lf><cr><1f><!doctype html public “-
+Connection:Keep-Alive
 
-//w3c//dtd html 4.0 transitional//en"><lf><html><1f>
+<cr><1f>
 
-<head><1f> <meta http-equiv="Content-Type”
+Content-Type: text/html; 
 
-content="text/html; charset=iso-8859-1"><lf> <meta
+charset=ISO-8859-1l<cr><lf><cr><1f><!doctype html public “-//w3c//dtd html 4.0 transitional//en"><lf><html><1f><head><1f> <meta http-equiv="Content-Type”content="text/html; charset=iso-8859-1"><lf> <metaname="GENERATOR” content="Mozilla/4.79 [en] (Windows NT5.0; U) Netscape]”><1f> <title>CMPSCI 453 / 591 /NTU-ST550A Spring 2005 homepage</title><1lf></head><1f><muito mais texto do documento em seguida (nao mostrado)>
 
-name="GENERATOR” content="Mozilla/4.79 [en] (Windows NT
+a. O servidor foi capaz de encontrar o documento com sucesso ou não? A que horas foi apresentada a resposta do documento?
 
-5.0; U) Netscape]”><1f> <title>CMPSCI 453 / 591 /
+Sim, a resposta foi 200 OK. A resposta do documento foi Date: Tue, 07 Mar 2008 12:39:45GMT
 
-NTU-ST550A Spring 2005 homepage</title><1lf></head><1f>
+b. Quando o documento foi modificado pela ultima vez? 
 
-<muito mais texto do documento em seguida (nao mostrado)> a. O servidor foi capaz de encontrar o documento com sucesso ou não? A que horas foi apresentada a
+Last-Modified: Sat, 10 Dec2005 18:27:46GMT
 
-resposta do documento?
+c. Quantos bytes existem no documento que esta retornando?
 
-b. Quando o documento foi modificado pela ultima vez? c. Quantos bytes existem no documento que esta retornando?
+Content-Length: 3874
 
 d. Quais são os 5 primeiros bytes do documento que esta retornando? O servidor aceitou uma conexão persistente?
+
+<!doc Esses cinco bytes representam o início do elemento <!doctype html public "-//w3c//dtd html 4.0 transitional//en">, que é a declaração do tipo de documento HTML.
+
+Sim: Connection:Keep-Alive
+
 
 
 
