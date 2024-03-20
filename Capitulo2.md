@@ -36,6 +36,12 @@ Ex de usos para o TCP: Web, transferência de arquivos, multimídia em fluxo con
 
 Protocolos especificados RFC são públicos (Web, HTTP, etc).
 
+Aplicação de rede: Web (cliente-servidor, que permite aos usuarios obter documentos de servidores por demanda).
+Protocolo de camada de aplicação: HTTP (define o formato e a sequência das mensagens que são passadas entre o navegador e o servidor).
+
+**HTTP**: HyperText Transfer Protocol - protocolo da camada de aplicação da web. É executado em sistemas finais diferentes e em dois programas: um cliente e outro servidor. Coonversam entre si por meiio de troca de mensagens. Ele define como os clientes requisitam páginas aos servidores e como eles as transferem aos clientes. Ele usa o TCP como seu protocolo de transporte subjacente. O cliente HTTP primeiro inicia uma conexão TCP com o servidor. Uma vez estabelecida, os processos di navegador e do servidor acessa o TCP por meio de suas interfaces de socket. **Prtocolo sem estado**( não mantem informação alguma sobre clientes ).
+
+*Página da web*: (documento), é constituida de objetos, e ela tem um URL que tem 2 componentes: o nome do hospedeiro(hostname) do servidor que abriga o objeto e o nome do caminho do objeto.
 
 
 
