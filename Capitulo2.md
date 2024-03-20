@@ -62,7 +62,10 @@ Metodo PUT: usado junto com ferramentas de edicao da Web e por aplicacoes que pr
 
 *Cookies*: permitem que sites monitorem seus usuarios. Normalmente o site usa um banco de dados de apoio. O usuario tem um numero de identificacap proprio (Set cookie).
 
-*Cache Web*: tambem denominado: servidor proxy
+*Cache Web*: tambem denominado: servidor proxy, tem seu proprio disco de armazenagem e mantem, dentro dele, copias de objetos recentemente requisitados. O cache é um servidor e um cliente. Ele é utlizado para: diminuir o tempo de resposta para a requisicao de um cliente em um site ja acessado 1 vez; podem diminuir o trafego no enlance de acesso de uma instituicao qualquer à Internet. Problema: a copia de um objeto existente no cache pode estar desatualizada, mas existe o **GET condicional** que verifica se os objetos estao atualizados. "If-Modified-Since"
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
