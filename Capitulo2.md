@@ -97,13 +97,19 @@ O cache web reduzirá o atraso para alguns objetos requisitados por um usuário,
 
 **P1** - Falso ou verdadeiro?
 a. Um usuário requisita uma página Web que consiste em algum texto e três imagens. Para essa página, o cliente enviará uma mensagem de requisição e receberá quatro mensagens de resposta.
+
 b. Duas páginas Web distintas (por exemplo, www.mit.edu/research.html e www.mit.edu/ students .htm1l) podem ser enviadas pela mesma conexão persistente.
+
 c. Com conexões não persistentes entre navegador e servidor de origem, é possível que um único segmento TCP transporte duas mensagens distintas de requisição HTTP.
+
 d. O cabeçalho Date: na mensagem de resposta HTTP indica a última vez que o objeto da resposta foi modificado.
 
 A - Verdadeiro
+
 B - Verdadeiro
+
 C - Falso: Em uma conexão não persistente, a conexão TCP é fechada após cada transação ou após o término da comunicação entre o cliente e o servidor. Isso significa que, uma vez que uma requisição HTTP é enviada e a resposta é recebida, a conexão TCP é encerrada.
+
 D - Falso - O cabeçalho Date na mensagem de resposta HTTP indica a data e hora em que a mensagem de resposta foi gerada pelo servidor, não a última vez que o objeto da resposta foi modificado.
 
 **P4** Considere a seguinte cadeia de caracteres ASCII capturada pelo Wireshark quando o navegador enviou uma mensagem HTTP GFT (ou seja, o conteúdo real de uma mensagem HTTP GET). Os caracteres <cr><lf> são retorno de carro e avanço de linha (ou seja, a cadeia de caracteres em itálico <cr> no texto abaixo representa o caractere único retorno de carro que estava contido, naquele momento, no cabeçalho HTTP). Responda às seguintes questões, indicando onde está a resposta na mensagem HTTP GET a seguir.
