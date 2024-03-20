@@ -119,18 +119,23 @@ Keep-Alive: 300<cr> <1f>
 Connection: keep-alive<cr><1lf><cr><lf>
 
 a. Qual é a URL do documento requisitado pelo navegador?
+
 index.html
 
 b. Qual versão do HTTP o navegador está rodando?
+
 1.1
 
 c. O navegador requisita uma conexão não persistente ou persistente?
+
 Conexao persistente por causa do: Connection: keep-alive<cr><1lf><cr><lf>
 
 d. Qual é o endereço IP do hospedeiro no qual o navegador está rodando?
+
 ?
 
 e. Que tipo de navegador inicia essa mensagem? Por que é necessário o tipo de navegador em uma mensagem de requisição HTTP?
+
 User-Agent: Mozilla/5.0; Compatibilidade:, Recursos específicos do navegador, Debugging e suporte, etc.
 
 
