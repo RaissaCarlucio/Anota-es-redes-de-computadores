@@ -196,6 +196,14 @@ d. Quais são os 5 primeiros bytes do documento que esta retornando? O servidor 
 
 Sim: Connection:Keep-Alive
 
+**P9** - Considere a Figura 2.12, que mostra uma rede institucional conectada a Internet. Suponha que o tamanho médio do objeto seja 850 mil bits e que a taxa média de requisição dos navegadores da instituição aos servidores de origem seja 16 requisições por segundo. Suponha também que a quantidade de tempo que leva desde o instante em que o roteador do lado da Internet do enlace de acesso transmite uma requisição HTTP até que receba a resposta seja 3 segundos em média (veja Seção 2.2.5). Modele o tempo total médio de resposta como a soma do atraso de acesso médio (isto é, o atraso entre o roteador da Internet e o roteador da instituição) e o tempo médio de atraso da Internet. Para a média de atraso de acesso, use A(1 — AB), sendo A o tempo médio requerido para enviar um objeto pelo enlace de acesso e p a taxa de chegada de objetos ao enlace de acesso.
+
+a. Determine o tempo total médio de resposta.
+
+b. Agora, considere que um cache é instalado na LAN institucional e que a taxa de resposta local seja 0,4. Determine o tempo total de resposta
+
+**P10** - Considere um enlace curto de 10 m através do qual um remetente pode transmitir a uma taxa de 150 bits/s em ambas as direções. Suponha que os pacotes com dados tenham 100 mil bits de comprimento, e os pacotes que contêm controle (por exemplo, ACK ou apresentação) tenham 200 bits de comprimento. Admita que N conexões paralelas recebam cada 1/N da largura de banda do enlace. Agora, considere o protocolo HTTP e suponha que cada objeto baixado tenha 100 Kbits de comprimento e que o objeto inicial baixado contenha 10 objetos referenciados do mesmo remetente. Os downloads paralelos por meio de instâncias paralelas de HTTP não persistente fazem sentido nesse caso? Agora considere o HTTP persistente. Você espera ganhos significativos sobre o caso não persistente? Justifique sua resposta.
+
 
 
 
