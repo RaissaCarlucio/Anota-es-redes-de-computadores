@@ -67,9 +67,32 @@ Metodo PUT: usado junto com ferramentas de edicao da Web e por aplicacoes que pr
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+**Perguntas**:
 
-A
+**R1** - Relacione cinco aplicações da Internet não proprietárias e os protocolos de camada de aplicação que elas usam
 
+R: Aplicacao1: Navegador WEB
+Protocolo1: HTTP;
+
+Aplicacao2: Email
+Protocolo2: SMTP
+
+Aplicacao3: Transferencia de arquivo
+Protocolo3: FTP
+
+Aplicacao4: Correio eletronico
+Protocolo4: SMTP
+
+Aplicacao5: Multimidia em fluxo continuo
+Protocolo5: HTTP
+
+**R12** - Considere um site de comércio eletrônico que quer manter um registro de compras para cada um de seus clientes. Descreva como isso pode ser feito com cookies.
+
+R: O site pode ter dentro dele um banco de dados. Toda vez que um cliente entrar no site, vai se criar um Set Cookie, que é um numero de acesso para aquele usuario, que vai ser usado para monitorar o que o cliente esta procurando e comprando. Tudo isso vai sendo guardado no banco de dados, facilitando a maneira de monitorar o usuario e oferecer produtos parecidos ao de sua busca pelo site.
+
+**R13** - Descreva como o cache Web pode reduzir o atraso na recepção de um objeto requisitado. O cache Web reduzirá o atraso para todos os objetos requisitados por um usuário ou somente para alguns objetos? Por quê?
+
+R: 
 
 
 
