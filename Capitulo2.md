@@ -16,7 +16,28 @@ Para enviar a correspondência postal a um determinado destino, este precisa de 
 
 **Transferência confiável de dados**; **Vazão**: taxa pela qual o processo remetente pode enviar bits ao processo destinatário; **Temporização** (Atraso menor por exemplo para um pensonagem fazer uma ação em um jogo); **Segurança**: dados protegidos.
 
-Protocolo UDP e TCP
+**Protocolo TCP**: - Serviço orientado para conexão: O TCP faz o cliente e o servidor trocarem informações de contrle de camada de transporte antes que as mensagens de camada de aplicação comecem a fluir, os preparando para a enxuarrada de pacotes;
+
+- Serviço confiavel de transporte: Quando aparece que um pacote não chegou, o TCP fica enviando o pacote que falta várias vezes novamete.
+
+- Mecanismo de controle de congestionameto.
+
+**Protocolo UDP**: Simplificado. Não possui serviço de controle de conexão e provê serviço não confiavel de transferecia de dados. Mensagens podem chegar tambem fora de odem.
+
+ Aperfeiçoamento do TCP: SSL ( Secure Sockets Layer ): oferece serviços importantes de segurança.
+
+Ex de usos para o TCP: Web, transferência de arquivos, multimídia em fluxo contínuo, etc.
+
+**Protocolo de camada de apliação**: ele define:
+  - Os tipos de mensagens trocadas;
+  - A sintaxe dosvários tipos de mensagens
+  - A semântica dos campos
+  - Regras para determinar quando e como um processo envia e responde mensagens.
+
+Protocolos especificados RFC são públicos (Web, HTTP, etc).
+
+
+
 
 
 
