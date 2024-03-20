@@ -43,6 +43,34 @@ Protocolo de camada de aplicação: HTTP (define o formato e a sequência das me
 
 *Página da web*: (documento), é constituida de objetos, e ela tem um URL que tem 2 componentes: o nome do hospedeiro(hostname) do servidor que abriga o objeto e o nome do caminho do objeto.
 
+*Conexoes nao persistentes*: Cada conexao TCP é encerrada apos o servidor enviar o objeto. Desvantagens: uma nova conexao deve ser estabelecida e mantida para cada objeto solicitado; Para cada coexao, devem ser alocados buffers TCP e conservadas variaveis TCP, sobrecarregando o servidor Web.
+* Tempo de viagem de ida e volta*: Tempo que leva para um pequeno pacote viajar do cliente ao servidor e de volta ao cliente (sao 2 RTTs(um para estabelecer a conexao ao TCP e outro para solicitar e receber um objeto) mais o tempo de transmissao do arquivo HTML no servidor).
+
+*Conexoes persistentes*: o servidor deixa a conexao TCP aberta apos enviar resposta.
+
+Metodo GET: usado quando o navegador requisita um objeto.
+Metodo POST: usado quando o usuario preenche um formulario.
+Metodo HEAD: quando um servidor recebe uma requisicao com o metodo HEAD, responde com uma mensagem HTTP, mas deixa de fora o objeto requisitado.
+Metodo PUT: usado junto com ferramentas de edicao da Web e por aplicacoes que precisam carregar objetos para servidores Web.
+
+
+200 OK: requisicao bem sucedida.
+301 Moved Permanetly: Objeto requisitado foi removido em definitivo.
+400 Bad Request: O codigo generico de erro que indica que a requisicao nao pode ser entendida pelo servidor.
+404 Not Found: O documento requisitado nao existe no servidor.
+505 HTTP Version Not Supported: a versao do protocolo HTTP requisitada nao é suportada pelo servidor.
+
+*Cookies*: permitem que sites monitorem seus usuarios. Normalmente o site usa um banco de dados de apoio. O usuario tem um numero de identificacap proprio (Set cookie).
+
+*Cache Web*: tambem denominado: servidor proxy
+
+
+
+
+
+
+
+
 
 
 
